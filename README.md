@@ -3,7 +3,7 @@ A basic Python script that will list and delete EBS snapshots that are not attac
 
 ## Setup
 Follow the steps to get setup to use this script
-* `git clone my-repo`
+* `git clone https://github.com/kbachand/ebs-snapshot-delete.git`
 * `cd ebs-snapshot-delete`
 
 ## Script Usage
