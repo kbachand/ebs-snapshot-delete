@@ -53,23 +53,15 @@ def delete(args):
             except Exception as e:
                 total_errors.append(snapshot_id)
                 print("Issue in deleting snapshot with id: " + snapshot_id + " error is: " + str(e))
-            #Simple if statement to output total errors if any as well as total snapshots deleted
-            if len(total_errors) > 0:
-                print("Total Errors:", len(total_errors))
-            else:
-                print("There were no errors")
+        # Simple if statement to output total errors if any as well as total snapshots deleted
+        if len(total_errors) > 0:
+            print("Total Errors:", len(total_errors))
+        else:
+            print("There were no errors")
 
-            print("Total Snapshots Deleted:", len(total_deleted))
+        print("Total Snapshots Deleted:", len(total_deleted))
     else:
         print("No snapshots deleted")
-
-    #Simple if statement to output total errors if any as well as total snapshots deleted
-#    if len(total_errors) > 0:
-#        print("Total Errors:", len(total_errors))
-#    else:
-#        print("There were no errors")
-#
-#    print("Total Snapshots Deleted:", len(total_deleted))
 
 # Add functionality for cli argument to delete
 if __name__ == '__main__':
